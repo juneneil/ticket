@@ -18,8 +18,8 @@ define("SITE_NAME", $title);
 date_default_timezone_set("Africa/Lagos");
 $date = date('D, d-M-Y h:i:s A');;
 $date_small = date('d-M-Y');;
-//INSERT YOUR OWN PAYSTACK API KEYS
-$paystack = "#YOUR_API_KEY"; //Do not change this! Redirect URL http://localhost/train/pro/verify.php
+//HERE IS API KEYS
+$paystack = "#YOUR_API_KEY";
 if (!function_exists('connect')) {
 
     function connect()
@@ -44,15 +44,15 @@ function sendMail($to, $subject, $msg)
         $mail->isSMTP(); // Set mailer to use SMTP
         $mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers
         $mail->SMTPAuth = true; // Enable SMTP authentication
-        $mail->Username = "fromcodemail@mail.com"; // SMTP username
-        $mail->Password = "0000001XYZZ"; // SMTP password
+        $mail->Username = "test@mail.com"; // SMTP username
+        $mail->Password = "password"; // SMTP password
         $mail->SMTPSecure = 'ssl'; // Enable TLS encryption, `ssl` also accepted
         $mail->Port = 465; // TCP port to connect to
         //Recipients
-        $from_name = 'E-TICKET SYSTEM ';
+        $from_name = 'Online Ticket ';
         $mail->setFrom($mail->Username, $from_name);
         $mail->addAddress($to); // Name is optional
-        $mail->addReplyTo("simbi@mail.com", "Name Name");
+        $mail->addReplyTo("test2@mail.com", "Name Name");
         // $mail->addCC('cc@example.com');
         // $mail->addBCC('bcc@example.com');
 
@@ -133,7 +133,7 @@ function sendMail($to, $subject, $msg)
                     <table width="100%" border="0" cellspacing="0" cellpadding="0">
                       <tr>
                         <td class="h2" style="padding: 0 0 0 3px;">
-                          E-TICKET SYSTEM
+                          Online Ticket
                         </td>
                       </tr>
                       <tr>
@@ -615,7 +615,7 @@ function printClearance($id)
 <style>
 table th{font-weight:italic}
 </style>
-<h1 style="text-align:center"><img src="images/trainlg.png" width="100" height="100"/><br/>ONLINE TICKET RESERVATION SYSTEM<br/> TRAIN TICKET</h1> <div style="text-align:right; font-family:courier;font-weight:bold"><font size="+6">Ticket N<u>o</u>: $uniqueCode </font></div>
+<h1 style="text-align:center"><img src="images/trainlg.png" width="100" height="100"/><br/>PATEROS TECHNOLOGICAL COLLEGE<br/> ONLINE TICKET</h1> <div style="text-align:right; font-family:courier;font-weight:bold"><font size="+6">Ticket N<u>o</u>: $uniqueCode </font></div>
 <table width="100%" border="1">
 <tr><th colspan="2" style="text-align:center"><b>Personal Data</b></th></tr>
 <tr><th><b>Full Name:</b></th><td>$fullname</td></tr>
@@ -878,7 +878,7 @@ function printReport($id)
     // set text shadow effect
     $pdf->setTextShadow(array('enabled' => true, 'depth_w' => 0.2, 'depth_h' => 0.2, 'color' => array(196, 196, 196), 'opacity' => 1, 'blend_mode' => 'Normal'));
     // Set some content to print
-    $html = '<h5 style="text-align:center"><img src="images/trainlg.png" width="80" height="80"/><br/>ONLINE TICKET RESERVATION SYSTEM<br/> LIST OF BOOKINGS  FOR ' . $date . ' (' . $time . ')</h5> <div style="text-align:right; font-family:courier;font-weight:bold"><font size="+1">Train ' . $train . ' (' . $sn . ' Passengers) : ' . $schedule . ' </font></div>' . $result;
+    $html = '<h5 style="text-align:center"><img src="images/trainlg.png" width="80" height="80"/><br/>PATEROS TECHNOLOGICAL COLLEGE<br/> LIST OF BOOKINGS  FOR ' . $date . ' (' . $time . ')</h5> <div style="text-align:right; font-family:courier;font-weight:bold"><font size="+1">Train ' . $train . ' (' . $sn . ' Passengers) : ' . $schedule . ' </font></div>' . $result;
     // die($html);
     // Print text using writeHTMLCell()
     $pdf->writeHTMLCell(0, 0, '', '', $html, 0, 1, 0, true, '', true);

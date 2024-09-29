@@ -6,10 +6,10 @@ include 'session.php';
 include '../constants.php';
 if (@$_GET['page'] == 'print' && isset($_GET['print'])) printClearance($_GET['print']);
 $fullname =  getIndividualName($_SESSION['user_id'], $conn);
-if (isset($_GET['error'])) {
-    echo "<script>alert('Payment could not be initialized! Network Error!'); window.location = 'individual.php?page=reg';</script>";
-    exit;
-}
+// if (isset($_GET['error'])) {
+//     echo "<script>alert('Payment could not be initialized! Network Error!'); window.location = 'individual.php?page=reg';</script>";
+//     exit;
+// }
 ?>
 <!DOCTYPE html>
 
@@ -107,6 +107,13 @@ if (isset($_GET['error'])) {
                             <a href="individual.php?page=feedback" class="nav-link <?php echo (@$_GET['page'] == 'feedback') ? 'active' : '';?>">
                                 <i class="fa fa-mail-bulk nav-icon"></i>
                                 <p>Feedback</p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="individual.php?page=feedback" class="nav-link <?php ?>">
+                                <i class="fa fa-mail-bulk nav-icon"></i>
+                                <p>Profile</p>
                             </a>
                         </li>
 

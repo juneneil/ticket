@@ -12,6 +12,9 @@ include 'constants.php';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title><?php echo @$title; ?></title>
 
+    <!--FAVICON PICTURE-->
+    <link rel="icon" type="image/x-icon" href="images/logo-ptc.png">
+
 
     <!-- [ FONT-AWESOME ICON ] 
         
@@ -87,7 +90,8 @@ include 'constants.php';
         <!-- Navigation
     ==========================================-->
 
-        <nav class=" nim-menu navbar navbar-default navbar-fixed-top">
+        <nav class=" nim-menu navbar navbar-default navbar-fixed-top" style="background: linear-gradient(to right, #30D01E, #1B8A0D);
+">
 
             <div class="container">
 
@@ -129,11 +133,11 @@ include 'constants.php';
                             </a></li>
 
                         <li><a href="library/sample.pdf" class="page-scroll">
-                                <h3>Map</h3>
+                                <h3>Contact Us</h3>
                             </a></li>
 
                         <li><a href="pro/signin.php" class="page-scroll">
-                                <h3>Passenger Portal</h3>
+                                <h3>Login</h3>
                             </a></li>
 
                         <li><a href="pro/adminsignin.php" class="page-scroll">
@@ -170,17 +174,17 @@ include 'constants.php';
                         <div class="main-heading-content col-md-12 col-sm-12 text-center">
 
                             <h1 class="main-heading-title"><span class="main-element themecolor"
-                                    data-elements=" Online Ticket, Online Ticket, Online Ticket"></span></h1>
+                                    data-elements=" School Payment, School Management, Online Ticket"></span></h1>
 
                             <h1 class="main-heading-title"><span class="main-element themecolor"
-                                    data-elements=" Reservation System, Reservation System, Reservation System"></span>
+                                    data-elements="PATEROS TECHNOLOGICAL COLLEGE, PATEROS TECHNOLOGICAL COLLEGE, PATEROS TECHNOLOGICAL COLLEGE"></span>
                             </h1>
 
-                            <p class="main-heading-text">WELCOME TO,<br />E - TICKETING FOR RAILWAYS</p>
+                            <p class="main-heading-text">Welcome to,<br />Online Ticketing for Pateros Technological College</p>
 
                             <div class="btn-bar">
 
-                                <a href="pro/signin.php" class="btn btn-custom theme_background_color">Make Reservations Now</a>
+                                <a href="pro/signin.php" class="btn btn-custom theme_background_color">Get Started</a>
 
                             </div>
 
@@ -205,21 +209,19 @@ include 'constants.php';
 
                         <div class="main-heading-content col-md-12 col-sm-12 text-center">
 
-                            <h1 class="main-heading-title">XYZ Railway Co. Contact List</h1>
+                            <h1 class="main-heading-title">PATEROS TECHNOLOGICAL COLLEGE</h1>
 
-                            <p class="main-heading-text">The XYZ Railway Corporation is 112 years old and it runs a
-                                unilaterally designed track system of 1067mm cape gauge. Only 30km of its track
-                                distribution is in double track and that is within Lagos area.
-                                <br />The XYZ railway narrow gauge network is approximately 3,500 km long and is
-                                currently being extended by a narrow gauge line between ABC and the BCA - Port
-                                Harcourt line and a 275 km long standard gauge line between Ikakpe – Ajaokuta – Warri.
+                            <p class="main-heading-text">Welcome to Pateros Technological College. Start your journey to become a globally competitive professional. Kick off by following this step-by-step admission process.
+                                <br />Pateros Technological College envisions itself as an institution of higher 
+                                learning which is strongly committed to the holistic development of the students to improve their 
+                                lives in particular and the society in general
                             </p>
 
                             <div class="btn-bar">
 
-                                <a href="system/" class="btn btn-custom theme_background_color">Get Started</a>
+                                <a href="pro/signin.php" class="btn btn-custom theme_background_color">Get Started</a>
 
-                                <a href="system/admin" class="btn btn-custom-outline">Admin</a>
+                                <!-- <a href="system/admin" class="btn btn-custom-outline">Admin</a> -->
 
                             </div>
 
@@ -276,10 +278,16 @@ include 'constants.php';
 
                             <i class="fa fa-newspaper-o"></i>
 
-                            <h4>Get Train Tickets from the comfort of your home</h4>
+                            <h4>History and Beginnings of PTC</h4>
 
-                            <p class="black">Book train tickets from anywhere using the robust ticketing platform
-                                exclusively built to provide the passengers with pleasant ticketing experience. </p>
+                            <p class="black">Pateros Technological College (PTC) is a technical-vocational 
+                                school established on January 29, 1993 by virtue of Municipal Ordinance 
+                                No. 93-07. It started its operation on August 16, 1993, initially offering
+                                short-term and two-year Associate in Computer Science, Computer Secretarial
+                                Science, and Computer Technology courses. Systematrix Computer Education and 
+                                Services, Inc. (SCESI) became the partner group of PTC through Municipal 
+                                Resolution No. 64 – 95 authorizing the Municipality of Pateros to sign a 
+                                Memorandum of Agreement with SCESI. </p>
 
                         </div> <!-- / margin -->
 
@@ -291,10 +299,17 @@ include 'constants.php';
 
                             <i class="fa fa-diamond"></i>
 
-                            <h4>Train & Ticketing related information at your fingertips</h4>
+                            <h4>PTC's Collaboration with TUP</h4>
 
-                            <p class="black">Checkout available seats, route information, fare information on real time
-                                basis with Esheba Platform.</p>
+                            <p class="black">The partnership between PTC and SCESI ended in October, 
+                                1995. Keeping up with the goal to continue its technical-vocational 
+                                advocacy, PTC forged another linkage, this time with the Technological 
+                                University of the Philippines (TUP). On September 26, 1995, PTC became 
+                                the recipient of the Adopt-A-School program of TUP through another 
+                                Memorandum of Agreement. The linkage gave birth to the first four-year 
+                                Bachelor of Computer Science program in the academic year 1997 – 1998. 
+                                PTC also became TUP’s ally in the off-campus training of the latter’s 
+                                undergraduate and graduate students.</p>
 
                         </div> <!-- / margin -->
 
@@ -306,9 +321,15 @@ include 'constants.php';
 
                             <i class="fa fa-dollar"></i>
 
-                            <h4>Pay Securely</h4>
+                            <h4>Establishing Institutional Independence</h4>
 
-                            <p class="black">Online payment. (NO REFUND!)</p>
+                            <p class="black">Because of these linkages, Pateros Technological College gained
+                                 its institutional footing to stand on its own. This paved the way to offer
+                                 ladderized scheme programs that led to Baccalaureate Degrees. The Bachelor 
+                                 of Science in Education, Major in Information System and Minor in Mathematics 
+                                 was offered in SY 2006 – 2007. Then, the Certificate in Hotel and Restaurant 
+                                 Management leading to Bachelor of Science in Hospitality Management and Bachelor 
+                                 of Science in Office Administration were offered the following school year.</p>
 
                         </div> <!-- / margin -->
 

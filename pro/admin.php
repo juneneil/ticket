@@ -23,6 +23,9 @@ $fullname =  "System Administrator";
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!--FAVICON PICTURE-->
+    <link rel="icon" type="image/x-icon" href="../images/logo-ptc.png">
+    <!--BOOTSTRAP-->
     <link rel="stylesheet" href="plugins/datatables-bs4/css/dataTables.bootstrap4.css">
 
     <title><?php echo SITE_NAME, ' - ', ucwords($_SESSION['category']); ?> </title>
@@ -116,7 +119,7 @@ $fullname =  "System Administrator";
                                 </p>
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a href="admin.php?page=route" class="nav-link      <?php
                                                                                 echo (@$_GET['page'] == 'route') ? 'active' : '';
                                                                                 ?>">
@@ -136,7 +139,7 @@ $fullname =  "System Administrator";
                                     Trains 
                                 </p>
                             </a>
-                        </li>
+                        </li> -->
 
                         <li class="nav-item">
                             <a href="admin.php?page=report" class="nav-link      <?php
@@ -178,6 +181,17 @@ $fullname =  "System Administrator";
                                 <i class="nav-icon fas fa-search"></i>
                                 <p>
                                     Search
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="admin.php?page=search" class="nav-link      <?php
+                                                                                    
+                                                                                    ?>">
+                                <i class="nav-icon fas fa-search"></i>
+                                <p>
+                                    Profile
                                 </p>
                             </a>
                         </li>
