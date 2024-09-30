@@ -89,7 +89,7 @@ $me = $_SESSION['user_id'];
                                                 <input type="hidden" class="form-control" name="id"
                                                     value="<?php echo $id ?>" required id="">
 
-                                                <!-- <p>Number of Tickets (If you are the only one, leave as it is) :
+                                                <p>Number of Tickets (If you are the only one, leave as it is) :
                                                     <input type="number" min='1' value="1"
                                                         max='<?php echo $max_first >= $max_second ? $max_first : $max_second ?>'
                                                         name="number" class="form-control" id="">
@@ -102,8 +102,8 @@ $me = $_SESSION['user_id'];
                                                         <option value="second">Second Class ($
                                                             <?php echo ($fetch['second_fee']); ?>)</option>
                                                     </select>
-                                                </p> -->
-                                                <p>Student ID
+                                                </p>
+                                                <!-- <p>Student ID
                                                     <input type="text" name="student_id" class="form-control" id="">
                                                 </p>
                                                 <p>Student Name
@@ -117,7 +117,7 @@ $me = $_SESSION['user_id'];
                                                 </p>
                                                 <p>Screen Shots
                                                     <input type="file" name="ss_picture" class="form-control" id="">
-                                                </p>
+                                                </p> -->
                                                 <input type="submit" name="submit" class="btn btn-success"
                                                     value="Proceed">
 

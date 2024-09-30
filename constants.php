@@ -19,7 +19,7 @@ date_default_timezone_set("Africa/Lagos");
 $date = date('D, d-M-Y h:i:s A');;
 $date_small = date('d-M-Y');;
 //HERE IS API KEYS
-$paystack = "#YOUR_API_KEY";
+$paystack = "pk_test_cca2ff6601d3497533d9388a11b76abd5498943e";
 if (!function_exists('connect')) {
 
     function connect()
@@ -771,7 +771,7 @@ function printReport($id)
     </style>";
     $sn = 0;
     $schedule = getRouteFromSchedule($id);
-    if ($getCount->num_rows < 1) {
+    if (!$getCount->num_rows < 1) {
         echo "<script>alert('No passenger yet for this schedule!');window.location='admin.php?page=report'</script>";
         exit;
     }

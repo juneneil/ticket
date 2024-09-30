@@ -111,7 +111,7 @@ $fullname =  getIndividualName($_SESSION['user_id'], $conn);
                         </li>
 
                         <li class="nav-item">
-                            <a href="individual.php?page=feedback" class="nav-link <?php ?>">
+                            <a href="individual.php?page=profile" class="nav-link <?php echo (@$_GET['page'] == 'profile') ? 'active' : '';?>">
                                 <i class="fa fa-mail-bulk nav-icon"></i>
                                 <p>Profile</p>
                             </a>
@@ -139,7 +139,7 @@ $fullname =  getIndividualName($_SESSION['user_id'], $conn);
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1 class="m-0 text-dark"> Passenger's Dashboard</h1>
+                            <h1 class="m-0 text-dark"> User's Dashboard</h1>
                         </div><!-- /.col -->
                     </div><!-- /.row -->
                 </div><!-- /.container-fluid -->
@@ -168,6 +168,9 @@ $fullname =  getIndividualName($_SESSION['user_id'], $conn);
             } elseif ($_GET['page'] == 'print') {
                 printClearance($user_id);
                 include 'individual/status.php';
+            } elseif ($_GET['page'] == 'profile'){
+                //Feedback
+                include 'individual/profile.php';
             } else {
                 //Feedback
                 include 'individual/feedback.php';

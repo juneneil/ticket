@@ -186,12 +186,12 @@ $fullname =  "System Administrator";
                         </li>
 
                         <li class="nav-item">
-                            <a href="admin.php?page=search" class="nav-link      <?php
-                                                                                    
+                            <a href="admin.php?page=profile" class="nav-link      <?php
+                                                                                    echo (@$_GET['page'] == 'profile') ? 'active' : '';
                                                                                     ?>">
                                 <i class="nav-icon fas fa-search"></i>
                                 <p>
-                                    Profile
+                                Profile
                                 </p>
                             </a>
                         </li>
@@ -251,6 +251,9 @@ $fullname =  "System Administrator";
 
             elseif ($_GET['page'] == 'search')
                 include 'admin/search.php';
+
+            elseif ($_GET['page'] == 'profile')
+                include 'admin/profile.php';    
 
             else {
                 include 'admin/index.php';
